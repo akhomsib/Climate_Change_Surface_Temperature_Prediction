@@ -23,7 +23,8 @@ https://zenodo.org/record/7834328
 
 There is a separate .csv file for each year, which will aid in loading the appropriate file for the selected year in the visualization code.
 
-Several other models have been trained and tested, apart from the final Random Forest, which can be found in the prediction_models.ipynb file or individually in the various .py files present in the code/models/ directory. 
+Several other models have been trained and tested, apart from the final Random Forest, which can be found in the prediction_models.ipynb file or 
+individually in the various .py files present in the code/models/ directory. 
 
 5. Run the visualization. This can be done by going inside the code directory and running a python server (python -m http.server 8000) to serve files from there. 
 After you have the python server running, go to localhost:8000 and navigate to the climate_visualization.html file in the visualization folder which will allow you to interact with the tool. 
