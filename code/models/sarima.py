@@ -10,19 +10,19 @@ import statsmodels.api as sm
 pd.options.mode.chained_assignment = None
 
 # Load the cleaned dataset
-city_temps = pd.read_csv("./data/city_temps_cleaned.csv")
-arhus = city_temps[city_temps.City == "Århus"]
+city_temps_sarima = pd.read_csv("./data/city_temps_cleaned.csv")
+arhus = city_temps_sarima[city_temps_sarima.City == "Århus"]
 dates = arhus[["dt", "AverageTemperature"]]
 dates["dt"] = pd.to_datetime(dates["dt"], format="%Y-%m-%d")
 dates.set_index("dt", inplace=True)
 dates.index = pd.DatetimeIndex(dates.index.values, freq=dates.index.inferred_freq)
 
 # Train the SARIMA model
-model = sm.tsa.statespace.SARIMAX(dates, order=(1,1,1), seasonal_order=(1,1,1,12), enforce_stationarity=False, enforce_invertibility=False)
-result = model.fit()
+sarima_model = sm.tsa.statespace.SARIMAX(dates, order=(1,1,1), seasonal_order=(1,1,1,12), enforce_stationarity=False, enforce_invertibility=False)
+result = sarima_model.fit()
 
 # Plot the model diagnostics
-result.plot_diagnostics()
+result.plot_diagnostics(figsize=(16, 12))
 
 # Predict surface temperatures for the next four years
 forecast = result.get_forecast(steps=48)
