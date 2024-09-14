@@ -15,10 +15,10 @@ https://www.kaggle.com/datasets/berkeleyearth/climate-change-earth-surface-tempe
 3. Clean the dataset and bring it to an appropriate format using the following command: 
 python data_clean.py 
 
-4. Train the model and generate the predictions. 
+4. Train the models and generate the predictions using the most suitable model. 
 To do this, Open the file prediction_models.ipynb in jupyter notebook or jupyter lab and run all the sections. 
 
-You can alternatively download the prediction data from our trained model on this website: 
+You can alternatively download the prediction data from our trained Random Forest model on this website: 
 https://zenodo.org/record/7834328
 
 There is a separate .csv file for each year, which will aid in loading the appropriate file for the selected year in the visualization code.
