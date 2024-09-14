@@ -11,11 +11,11 @@ from sklearn.metrics import mean_squared_error
 pandas.options.mode.chained_assignment = None
 
 # Load the cleaned dataset
-df = pandas.read_csv("./data/global_temps_cleaned.csv")
+global_temps = pandas.read_csv("./data/global_temps_cleaned.csv")
 
 # Construct the training set
-training_set = df[["dt", "LandAverageTemperature"]]
-training_set["dt"] = pandas.to_datetime(training_set["dt"], format="%Y-%m-%d")
+training_set = global_temps[["dt", "LandAverageTemperature"]]
+training_set["dt"] = pd.to_datetime(training_set["dt"], format="%Y-%m-%d")
 training_set.set_index("dt", inplace=True)
 training_set.info()
 
