@@ -6,7 +6,7 @@ Please follow the intructions below to setup and run the code.
 
 1. To setup the environment
 pip -m venv env
-Then activate the envornoment based on os
+Then activate the envirnoment with the given requirements based on os
 pip install -r requirements.txt 
 
 2. Download the dataset files from the given kaggle link and put them in the code/data/source/ directory. 
