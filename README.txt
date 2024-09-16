@@ -1,7 +1,7 @@
 # Climate Change: Surface Temperature Prediction and Visualization
 --------------------------------------------------------------------------------
 
-We use a virtual environment to run all the code and corresponding visualization. 
+A virtual environment is used to run all the code and corresponding visualization. 
 Please follow the intructions below to setup and run the code. 
 
 1. To setup the environment
