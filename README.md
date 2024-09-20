@@ -4,7 +4,7 @@
 A virtual environment is used to run all the code and corresponding visualization. 
 Please follow the intructions below to setup and run the code. 
 
-1. Setup the environment using the following command. <br />
+1. Navigate to the code/ directory in the terminal. Setup a python virtual environment using the following command. <br />
    pip -m venv env
 2. Then activate the environment with the given requirements in the `requirements.txt` file based on os. <br />
    pip install -r requirements.txt
