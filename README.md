@@ -13,7 +13,7 @@ Please follow the intructions below to setup and run the code.
 4. Clean the dataset and bring it to an appropriate format using the `data_clean.py` file and the following command. <br />
     python data_clean.py
 5. Train the models and generate the predictions using the most suitable model. <br />
-    To do this, Open the file `prediction_models.ipynb` in jupyter notebook or jupyter lab and run all the sections. 
+    To do this, open the `prediction_models.ipynb` file in jupyter notebook or jupyter lab and run all the sections. 
 
 You can alternatively download the prediction data from our trained Random Forest model on this website: 
 https://zenodo.org/record/7834328
