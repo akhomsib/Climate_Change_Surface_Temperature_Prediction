@@ -23,5 +23,6 @@ There is a separate .csv file for each year, which will aid in loading the appro
 Several other models have been trained and tested, apart from the final Random Forest, which can be found in the `prediction_models.ipynb` file or 
 individually in the various .py files present in the code/models/ directory. 
 
-6. Run the visualization. This can be done by going inside the code directory and running a python server (python -m http.server 8000) to serve files from there. <br />
-    After you have the python server running, go to localhost:8000 and navigate to the `climate_visualization.html` file in the visualization folder which will allow you to interact with the tool. 
+6. Run the visualization. This can be done by navigating to the code directory and running a python server to serve files from there. Use the following command to run the server.<br />
+   python -m http.server 8000
+   Once the python server is running, connect to localhost:8000 and navigate to the `climate_visualization.html` file in the visualization folder which will allow you to interact with the tool. 
