@@ -25,4 +25,4 @@ individually in the various .py files present in the code/models/ directory.
 
 6. Run the visualization. This can be done by navigating to the code directory and running a python server to serve files from there. Use the following command to run the server.<br />
    python -m http.server 8000
-   Once the python server is running, connect to localhost:8000 and navigate to the `climate_visualization.html` file in the visualization folder which will allow you to interact with the tool. 
+   Once the python server is running, connect to [localhost:8000](localhost:8000) and navigate to the `climate_visualization.html` file in the visualization folder which will allow you to interact with the tool. 
